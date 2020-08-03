@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bxs-o2-2C2">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--About-->
+        <scene sceneID="byZ-D3-rCR">
+            <objects>
+                <viewController storyboardIdentifier="AboutViewControllerScene" id="pZI-9k-nQp" customClass="AboutViewController" customModule="YuGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="g09-sQ-qRX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.20000000000000001" green="0.19215686274509802" blue="0.22745098039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="0dR-Ta-T2f"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="About" image="profile" id="5QY-7U-WXl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D5G-8s-2Xd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1048" y="-581"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="P4L-8l-Fzk">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="bxs-o2-2C2" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="T7g-u0-6Nu">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="barTintColor" red="0.23137254901960785" green="0.22352941176470587" blue="0.2627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBar>
+                    <connections>
+                        <segue destination="3zS-hN-oMG" kind="relationship" relationship="viewControllers" id="jNq-PH-I5w"/>
+                        <segue destination="pZI-9k-nQp" kind="relationship" relationship="viewControllers" id="0sn-ci-pJZ"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a6w-JN-msj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="129.91071428571428"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="3D3-h2-tNg">
+            <objects>
+                <viewController storyboardIdentifier="ViewControllerScene" id="3zS-hN-oMG" customClass="ViewController" customModule="YuGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wYR-pJ-hPy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" placeholder="Cari game disini" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F29-B2-rlD">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="QkT-aM-lc4"/>
+                                </constraints>
+                                <color key="barTintColor" red="0.20019704099999999" green="0.1914927065" blue="0.2274555862" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QRk-BV-m01">
+                                <rect key="frame" x="0.0" y="104" width="414" height="709"/>
+                                <color key="backgroundColor" red="0.20000000000000001" green="0.19215686274509802" blue="0.22745098039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.20000000000000001" green="0.19215686274509802" blue="0.22745098039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="QRk-BV-m01" firstAttribute="leading" secondItem="mjJ-tg-44W" secondAttribute="leading" id="7jV-Qr-0JV"/>
+                            <constraint firstItem="mjJ-tg-44W" firstAttribute="trailing" secondItem="QRk-BV-m01" secondAttribute="trailing" id="Da1-30-Goa"/>
+                            <constraint firstItem="F29-B2-rlD" firstAttribute="leading" secondItem="mjJ-tg-44W" secondAttribute="leading" id="Gj7-ff-Yj6"/>
+                            <constraint firstItem="F29-B2-rlD" firstAttribute="top" secondItem="mjJ-tg-44W" secondAttribute="top" id="aZc-mU-mv1"/>
+                            <constraint firstItem="F29-B2-rlD" firstAttribute="centerX" secondItem="QRk-BV-m01" secondAttribute="centerX" id="hRB-hT-iow"/>
+                            <constraint firstItem="mjJ-tg-44W" firstAttribute="bottom" secondItem="QRk-BV-m01" secondAttribute="bottom" id="iuR-9e-cGj"/>
+                            <constraint firstItem="QRk-BV-m01" firstAttribute="top" secondItem="F29-B2-rlD" secondAttribute="bottom" constant="16" id="sP1-1P-uGT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mjJ-tg-44W"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="home" id="sJP-Y3-wfA"/>
+                    <connections>
+                        <outlet property="searchGame" destination="F29-B2-rlD" id="EKL-DL-a2h"/>
+                        <outlet property="tableGame" destination="QRk-BV-m01" id="cnX-QK-wo3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C9M-67-tNQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1021.7391304347827" y="129.91071428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="home" width="24" height="24"/>
+        <image name="profile" width="24" height="24"/>
+    </resources>
+</document>

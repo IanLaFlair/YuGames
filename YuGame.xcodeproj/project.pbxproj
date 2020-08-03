@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,17 @@
 		5288431A24CBECEF00F0D31B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5288431824CBECEF00F0D31B /* Main.storyboard */; };
 		5288431C24CBECF200F0D31B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5288431B24CBECF200F0D31B /* Assets.xcassets */; };
 		5288431F24CBECF200F0D31B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5288431D24CBECF200F0D31B /* LaunchScreen.storyboard */; };
+		5288432824CC054800F0D31B /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5288432724CC054800F0D31B /* AboutViewController.swift */; };
+		528F03D324D7C8AE007C4941 /* Displayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528F03D224D7C8AE007C4941 /* Displayable.swift */; };
+		52AE22C224D7B58F006F237B /* GameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AE22C024D7B58F006F237B /* GameTableViewCell.swift */; };
+		52AE22C324D7B58F006F237B /* GameTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52AE22C124D7B58F006F237B /* GameTableViewCell.xib */; };
+		52E2D73524D5CD1D001330BD /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E2D73424D5CD1D001330BD /* GameModel.swift */; };
+		52E2D73724D5D20D001330BD /* GameResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E2D73624D5D20D001330BD /* GameResponse.swift */; };
+		8B159B6B328BB7A52874AF99 /* Pods_YuGame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02D682EA3D10DD5E4B40AC36 /* Pods_YuGame.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		02D682EA3D10DD5E4B40AC36 /* Pods_YuGame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YuGame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5288430F24CBECEF00F0D31B /* YuGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YuGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5288431224CBECEF00F0D31B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5288431424CBECEF00F0D31B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +32,14 @@
 		5288431B24CBECF200F0D31B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5288431E24CBECF200F0D31B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5288432024CBECF200F0D31B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5288432724CC054800F0D31B /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		528F03D224D7C8AE007C4941 /* Displayable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Displayable.swift; sourceTree = "<group>"; };
+		52AE22C024D7B58F006F237B /* GameTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTableViewCell.swift; sourceTree = "<group>"; };
+		52AE22C124D7B58F006F237B /* GameTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameTableViewCell.xib; sourceTree = "<group>"; };
+		52E2D73424D5CD1D001330BD /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
+		52E2D73624D5D20D001330BD /* GameResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameResponse.swift; sourceTree = "<group>"; };
+		68EC27A0E365B71472327180 /* Pods-YuGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YuGame.release.xcconfig"; path = "Target Support Files/Pods-YuGame/Pods-YuGame.release.xcconfig"; sourceTree = "<group>"; };
+		E9903C5EA99277108D706D04 /* Pods-YuGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YuGame.debug.xcconfig"; path = "Target Support Files/Pods-YuGame/Pods-YuGame.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B159B6B328BB7A52874AF99 /* Pods_YuGame.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +59,8 @@
 			children = (
 				5288431124CBECEF00F0D31B /* YuGame */,
 				5288431024CBECEF00F0D31B /* Products */,
+				A0829032CF40150FA8F5A6F7 /* Pods */,
+				A97103CD7635F4909B014D32 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +75,70 @@
 		5288431124CBECEF00F0D31B /* YuGame */ = {
 			isa = PBXGroup;
 			children = (
-				5288431224CBECEF00F0D31B /* AppDelegate.swift */,
-				5288431424CBECEF00F0D31B /* SceneDelegate.swift */,
-				5288431624CBECEF00F0D31B /* ViewController.swift */,
-				5288431824CBECEF00F0D31B /* Main.storyboard */,
+				52AE22BB24D7B4A8006F237B /* Base */,
+				52AE22BA24D7B4A2006F237B /* View */,
+				52E2D73324D5CD10001330BD /* Model */,
+				5288432624CC050200F0D31B /* Controller */,
 				5288431B24CBECF200F0D31B /* Assets.xcassets */,
 				5288431D24CBECF200F0D31B /* LaunchScreen.storyboard */,
 				5288432024CBECF200F0D31B /* Info.plist */,
 			);
 			path = YuGame;
+			sourceTree = "<group>";
+		};
+		5288432624CC050200F0D31B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				52AE22C024D7B58F006F237B /* GameTableViewCell.swift */,
+				5288431624CBECEF00F0D31B /* ViewController.swift */,
+				5288432724CC054800F0D31B /* AboutViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		52AE22BA24D7B4A2006F237B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5288431824CBECEF00F0D31B /* Main.storyboard */,
+				52AE22C124D7B58F006F237B /* GameTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		52AE22BB24D7B4A8006F237B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				5288431224CBECEF00F0D31B /* AppDelegate.swift */,
+				5288431424CBECEF00F0D31B /* SceneDelegate.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		52E2D73324D5CD10001330BD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				52E2D73424D5CD1D001330BD /* GameModel.swift */,
+				52E2D73624D5D20D001330BD /* GameResponse.swift */,
+				528F03D224D7C8AE007C4941 /* Displayable.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A0829032CF40150FA8F5A6F7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E9903C5EA99277108D706D04 /* Pods-YuGame.debug.xcconfig */,
+				68EC27A0E365B71472327180 /* Pods-YuGame.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A97103CD7635F4909B014D32 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				02D682EA3D10DD5E4B40AC36 /* Pods_YuGame.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +148,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5288432324CBECF200F0D31B /* Build configuration list for PBXNativeTarget "YuGame" */;
 			buildPhases = (
+				ABE07586851B10F079D31A5A /* [CP] Check Pods Manifest.lock */,
 				5288430B24CBECEF00F0D31B /* Sources */,
 				5288430C24CBECEF00F0D31B /* Frameworks */,
 				5288430D24CBECEF00F0D31B /* Resources */,
+				C5263E67C0563652D25FAAFE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,18 +204,66 @@
 				5288431F24CBECF200F0D31B /* LaunchScreen.storyboard in Resources */,
 				5288431C24CBECF200F0D31B /* Assets.xcassets in Resources */,
 				5288431A24CBECEF00F0D31B /* Main.storyboard in Resources */,
+				52AE22C324D7B58F006F237B /* GameTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		ABE07586851B10F079D31A5A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YuGame-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5263E67C0563652D25FAAFE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YuGame/Pods-YuGame-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YuGame/Pods-YuGame-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YuGame/Pods-YuGame-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5288430B24CBECEF00F0D31B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52AE22C224D7B58F006F237B /* GameTableViewCell.swift in Sources */,
+				52E2D73524D5CD1D001330BD /* GameModel.swift in Sources */,
 				5288431724CBECEF00F0D31B /* ViewController.swift in Sources */,
+				52E2D73724D5D20D001330BD /* GameResponse.swift in Sources */,
 				5288431324CBECEF00F0D31B /* AppDelegate.swift in Sources */,
+				5288432824CC054800F0D31B /* AboutViewController.swift in Sources */,
+				528F03D324D7C8AE007C4941 /* Displayable.swift in Sources */,
 				5288431524CBECEF00F0D31B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +406,7 @@
 		};
 		5288432424CBECF200F0D31B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9903C5EA99277108D706D04 /* Pods-YuGame.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +424,7 @@
 		};
 		5288432524CBECF200F0D31B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68EC27A0E365B71472327180 /* Pods-YuGame.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
