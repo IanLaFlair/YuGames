@@ -14,14 +14,37 @@
                     <view key="view" contentMode="scaleToFill" id="g09-sQ-qRX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ian" translatesAutoresizingMaskIntoConstraints="NO" id="2Sa-n1-RbR">
+                                <rect key="frame" x="122" y="70" width="170" height="170"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="170" id="5Kx-AZ-e06"/>
+                                    <constraint firstAttribute="height" constant="170" id="9yx-C2-5lD"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ian Rachman Dana" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WJq-PV-BW5">
+                                <rect key="frame" x="131" y="264" width="152" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="0.20000000000000001" green="0.19215686274509802" blue="0.22745098039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2Sa-n1-RbR" firstAttribute="top" secondItem="0dR-Ta-T2f" secondAttribute="top" constant="26" id="1gX-os-vVK"/>
+                            <constraint firstItem="WJq-PV-BW5" firstAttribute="centerX" secondItem="g09-sQ-qRX" secondAttribute="centerX" id="OHF-2e-aqA"/>
+                            <constraint firstItem="0dR-Ta-T2f" firstAttribute="trailing" secondItem="2Sa-n1-RbR" secondAttribute="trailing" constant="122" id="nwP-ge-7ZG"/>
+                            <constraint firstItem="2Sa-n1-RbR" firstAttribute="centerX" secondItem="g09-sQ-qRX" secondAttribute="centerX" id="qIQ-O2-Dx1"/>
+                            <constraint firstItem="2Sa-n1-RbR" firstAttribute="leading" secondItem="0dR-Ta-T2f" secondAttribute="leading" constant="122" id="qzW-KB-07l"/>
+                            <constraint firstItem="WJq-PV-BW5" firstAttribute="top" secondItem="2Sa-n1-RbR" secondAttribute="bottom" constant="24" id="ubk-tC-gIm"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="0dR-Ta-T2f"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="About" image="profile" id="5QY-7U-WXl"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D5G-8s-2Xd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1048" y="-581"/>
+            <point key="canvasLocation" x="1047.8260869565217" y="-581.25"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="P4L-8l-Fzk">
@@ -42,7 +65,7 @@
                         </userDefinedRuntimeAttributes>
                     </tabBar>
                     <connections>
-                        <segue destination="3zS-hN-oMG" kind="relationship" relationship="viewControllers" id="jNq-PH-I5w"/>
+                        <segue destination="TPY-Z4-21P" kind="relationship" relationship="viewControllers" id="jNq-PH-I5w"/>
                         <segue destination="pZI-9k-nQp" kind="relationship" relationship="viewControllers" id="0sn-ci-pJZ"/>
                     </connections>
                 </tabBarController>
@@ -50,16 +73,16 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="129.91071428571428"/>
         </scene>
-        <!--Home-->
+        <!--YuGames-->
         <scene sceneID="3D3-h2-tNg">
             <objects>
                 <viewController storyboardIdentifier="ViewControllerScene" id="3zS-hN-oMG" customClass="ViewController" customModule="YuGame" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wYR-pJ-hPy">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <searchBar contentMode="redraw" placeholder="Cari game disini" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F29-B2-rlD">
-                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="QkT-aM-lc4"/>
                                 </constraints>
@@ -67,7 +90,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QRk-BV-m01">
-                                <rect key="frame" x="0.0" y="104" width="414" height="709"/>
+                                <rect key="frame" x="0.0" y="60" width="414" height="665"/>
                                 <color key="backgroundColor" red="0.20000000000000001" green="0.19215686274509802" blue="0.22745098039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tableView>
                         </subviews>
@@ -83,7 +106,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mjJ-tg-44W"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="home" id="sJP-Y3-wfA"/>
+                    <navigationItem key="navigationItem" title="YuGames" id="mIP-EI-Q0Y"/>
                     <connections>
                         <outlet property="searchGame" destination="F29-B2-rlD" id="EKL-DL-a2h"/>
                         <outlet property="tableGame" destination="QRk-BV-m01" id="cnX-QK-wo3"/>
@@ -91,11 +114,35 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C9M-67-tNQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1931.8840579710147" y="129.91071428571428"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="Pat-bj-oGW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TPY-Z4-21P" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="home" id="sJP-Y3-wfA"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="yT8-gB-EKI">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.20019704099999999" green="0.1914927065" blue="0.2274555862" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="3zS-hN-oMG" kind="relationship" relationship="rootViewController" id="mgM-AE-H5x"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7og-tF-lN8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
             <point key="canvasLocation" x="1021.7391304347827" y="129.91071428571428"/>
         </scene>
     </scenes>
     <resources>
         <image name="home" width="24" height="24"/>
+        <image name="ian" width="1145" height="1145"/>
         <image name="profile" width="24" height="24"/>
     </resources>
 </document>

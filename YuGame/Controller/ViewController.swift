@@ -24,6 +24,7 @@ class ViewController: UIViewController {
         searchGame.delegate = self
         tableGame.dataSource = self
         tableGame.register(UINib(nibName: "GameTableViewCell", bundle: nil), forCellReuseIdentifier: "GameCell")
+        tableGame.delegate = self
     }
     
    override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -94,5 +95,15 @@ extension ViewController: UITableViewDataSource{
             cell.alpha = 1.0
         }
         return cell
+    }
+}
+
+extension ViewController: UITableViewDelegate{
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+    {
+        let detail = DetailGameViewController(nibName: "DetailGameViewController", bundle: nil)
+        let item = items[indexPath.row]
+        detail.id = item.idGame
+        self.navigationController?.pushViewController(detail, animated: true)
     }
 }

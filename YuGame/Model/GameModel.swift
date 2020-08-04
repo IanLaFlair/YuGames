@@ -17,8 +17,6 @@ struct GameModel: Decodable {
     
 }
 
-
-
 extension GameModel: Displayable{
     var releaseGame: String{
         released
